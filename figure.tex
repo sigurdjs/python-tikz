@@ -1,0 +1,24 @@
+\begin{tikzpicture}[trim axis left, trim axis right]
+\begin{axis}[
+symbolic x coords={Group},
+width = \textwidth,
+height = 0.625*\textwidth,
+ticklabel style = {font = \footnotesize},
+legend style = {font = \footnotesize},
+label style = {font = \footnotesize},
+ymin = 0,
+xtick = data]
+\addplot[ybar, fill = red] coordinates { 
+(Group,1)
+};
+\addplot[ybar, fill = blue] coordinates { 
+(Group,3)
+};
+\addplot[ybar, fill = green] coordinates { 
+(Group,4)
+};
+\addplot[ybar, fill = yellow] coordinates { 
+(Group,5)
+};
+\end{axis}
+\end{tikzpicture}
